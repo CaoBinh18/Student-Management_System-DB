@@ -58,19 +58,19 @@ public class StudentDAO implements IStudentDAO{
     }
 
     public int selectIdStudent(){
-        int id = 0;
-        String query = "SELECT id FROM students ORDER BY id DESC LIMIT 1;";
+        int idc = 0;
+        String query = "SELECT * FROM students ORDER BY id DESC LIMIT 1;";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
-                id = rs.getInt("id");
+                idc = rs.getInt("id");
             }
 
         } catch (SQLException e) {
             printSQLException(e);
         }
-        return id;
+        return idc;
     }
 
     @Override

@@ -129,7 +129,7 @@ public class StudentServlet extends HttpServlet {
                     request.setAttribute("error",null);
                     request.setAttribute("success","Student was deleted");
                     request.setAttribute("warning",null);
-                    listStudent(request, response);
+                    showDeleteStudent(request, response);
                 }else{
                     response.sendRedirect("student");
                     request.setAttribute("error","Traded Student cannot be deleted");

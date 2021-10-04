@@ -47,7 +47,7 @@
 <%--                                        <td><c:out value="${student.address}"/></td>--%>
                                             <%--                                                <td><c:out value="${student.gpa}"/></td>--%>
                                         <td>
-                                            <a class="btn btn-warning" href="/student?action=edit&id=${math.id}" title="Edit">
+                                            <a class="btn btn-warning" href="/score?action=edit&id=${math.id}" title="Edit">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                             </a>
 <%--                                            <a class="btn btn-danger" href="/student?action=delete&id=${math.id}" title="Delete">--%>
